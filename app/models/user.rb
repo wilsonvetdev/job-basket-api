@@ -5,6 +5,7 @@ class User < ApplicationRecord
     has_many :notes, through: :jobs
     validates :first_name, :last_name, :email, :password, presence: true
     validates :email, uniqueness: true
+    validates :password, length: { 6..20 }
 
     def full_name
         user = self
