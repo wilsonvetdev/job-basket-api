@@ -34,7 +34,7 @@ note5 = Note.create!(content: 'I think Frankie can do referral for this one', jo
 reminder1 = Reminder.create!(content: 'revise resume', user: eric)
 reminder2 = Reminder.create!(content: 'call recruiter from IBM', user: eric)
 reminder3 = Reminder.create!(content: 'revise resume', user: sylwia)
-reminder4 = Reminder.create!(content: 'revise friend about referral for Hulu', user: sylwia)
+reminder4 = Reminder.create!(content: 'ask friend about referral for Hulu', user: sylwia)
 reminder5 = Reminder.create!(content: 'schedule meeting with career coach', user: sylwia)
 
 puts 'seeded 🤩 🤩 🤩'
