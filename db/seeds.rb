@@ -21,6 +21,9 @@ sylwia = User.create!(first_name: 'sylwia', last_name: 'vargas', password: 'abc1
 
 job1 = Job.create!(company_name: 'cisco', url: 'cisco.com', status: 'not applied', user: eric)
 job2 = Job.create!(company_name: 'cisco', url: 'cisco.com', status: 'not applied', user: sylwia)
+job3 = Job.create!(company_name: 'hulu', url: 'hulu.com', status: 'not applied', user: eric)
+job4 = Job.create!(company_name: 'hulu', url: 'hulu.com', status: 'not applied', user: sylwia)
+job5 = Job.create!(company_name: 'spotify', url: 'spotify.com', status: 'not applied', user: sylwia)
 
 note1 = Note.create!(content: 'application period ends 10/31', job: job1)
 note2 = Note.create!(content: 'POC: John Smith', job: job1)
