@@ -29,12 +29,12 @@ note1 = Note.create!(content: 'application period ends 10/31', job: job1)
 note2 = Note.create!(content: 'POC: John Smith', job: job1)
 note3 = Note.create!(content: 'application period ends 11/01', job: job2)
 note4 = Note.create!(content: 'POC: Jane Doe', job: job2)
-note5 = Note.create!(content: 'I think Frankie can do referral for this one', job: job2)
+note5 = Note.create!(content: 'I think Frankie can do referral for this one, but I should double check with him', job: job2)
 
 reminder1 = Reminder.create!(content: 'revise resume', user: eric)
 reminder2 = Reminder.create!(content: 'call recruiter from IBM', user: eric)
 reminder3 = Reminder.create!(content: 'revise resume', user: sylwia)
-reminder4 = Reminder.create!(content: 'revise friend about referral for Hulu', user: sylwia)
+reminder4 = Reminder.create!(content: 'ask friend about referral for Hulu', user: sylwia)
 reminder5 = Reminder.create!(content: 'schedule meeting with career coach', user: sylwia)
 
 puts 'seeded 🤩 🤩 🤩'
