@@ -6,6 +6,12 @@ class RemindersController < ApplicationController
         # render json: {message: 'hello we out here'}
     end
 
+    def destroy
+        reminder = Reminder.find(params[:id])
+        reminder.destroy
+        render json: reminder
+    end
+
     private
 
     def reminder_params
