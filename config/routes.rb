@@ -11,4 +11,7 @@ Rails.application.routes.draw do
   delete '/jobs/:id', to: 'jobs#destroy'
 
   post '/notes', to: 'notes#create'
+  patch '/notes/:id', to: 'notes#update'
+  delete '/notes/:id', to: 'notes#destroy'
+
 end
