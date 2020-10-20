@@ -9,4 +9,6 @@ Rails.application.routes.draw do
 
   post '/jobs', to: 'jobs#create'
   delete '/jobs/:id', to: 'jobs#destroy'
+
+  post '/notes', to: 'notes#create'
 end
