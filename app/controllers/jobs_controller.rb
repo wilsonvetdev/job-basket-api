@@ -5,6 +5,12 @@ class JobsController < ApplicationController
         render json: job
     end
 
+    def update
+        job = Job.find(params[:id])
+        job.update(job_params)
+        render json: job
+    end
+
     def destroy
         job = Job.find(params[:id])
         job.destroy
