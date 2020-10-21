@@ -6,4 +6,13 @@ Rails.application.routes.draw do
 
   post '/reminders', to: 'reminders#create'
   delete '/reminders/:id', to: 'reminders#destroy'
+
+  post '/jobs', to: 'jobs#create'
+  patch '/jobs/:id', to: 'jobs#update'
+  delete '/jobs/:id', to: 'jobs#destroy'
+
+  post '/notes', to: 'notes#create'
+  patch '/notes/:id', to: 'notes#update'
+  delete '/notes/:id', to: 'notes#destroy'
+
 end
