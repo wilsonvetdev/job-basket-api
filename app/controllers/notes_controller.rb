@@ -6,6 +6,8 @@ class NotesController < ApplicationController
         if @user
             note = Note.create(note_params)
             render json: note
+        else 
+            render json: {error: 'Unauthorized Action'}, status: 401
         end
     end
 
@@ -14,6 +16,8 @@ class NotesController < ApplicationController
             note = Note.find(params[:id])
             note.update(note_params)
             render json: note
+        else 
+            render json: {error: 'Unauthorized Action'}, status: 401
         end
     end
 
@@ -22,6 +26,8 @@ class NotesController < ApplicationController
             note = Note.find(params[:id])
             note.destroy
             render json: note
+        else 
+            render json: {error: 'Unauthorized Action'}, status: 401
         end
     end
 

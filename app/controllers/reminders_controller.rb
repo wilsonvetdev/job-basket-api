@@ -5,6 +5,7 @@ class RemindersController < ApplicationController
     def create
         reminder = @user.reminders.create(reminder_params)
         render json: reminder
+        
     end
 
     def destroy
