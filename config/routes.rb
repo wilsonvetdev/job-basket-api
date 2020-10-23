@@ -15,4 +15,7 @@ Rails.application.routes.draw do
   patch '/notes/:id', to: 'notes#update'
   delete '/notes/:id', to: 'notes#destroy'
 
+  post '/users/signin', to: 'users#signin'
+  post '/users', to: 'users#create'
+
 end
