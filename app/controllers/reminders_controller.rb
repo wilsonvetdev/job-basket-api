@@ -1,9 +1,11 @@
 class RemindersController < ApplicationController
 
+    before_action :authorized
+
     def create
-        reminder = Reminder.create(reminder_params)
+        reminder = @user.reminders.create(reminder_params)
         render json: reminder
-        # render json: {message: 'hello we out here'}
+        
     end
 
     def destroy
