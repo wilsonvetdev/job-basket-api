@@ -1,4 +1,7 @@
 Datadog.configure do |c|
-    # This will activate auto-instrumentation for Rails
+    c.env = 'job-basket'
+    c.service = 'save-applications'
+    c.sampling.default_rate = 1.0
+
     c.use :rails
 end
